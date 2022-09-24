@@ -24,9 +24,12 @@ namespace _123
             myCar.honk();
 
             Console.WriteLine(myCar.brand + " " + myCar.modelName);
+            myCar.calis();
 
 
+            Motorcycle myMotorcycle = new Motorcycle();
 
+            Console.WriteLine(myMotorcycle.brand + " " + myMotorcycle.modelName);
 
 
 

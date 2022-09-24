@@ -11,8 +11,11 @@ namespace _123
         public string brand = "ford";
         public void honk()
         {
+
             Console.WriteLine("düt düüüttt");
         }
+
+
 
 
 
@@ -22,6 +25,16 @@ namespace _123
     class Car : Vehicle
     {
         public string modelName = "mustang";
+        public void calis()
+        {
+            Console.WriteLine($"{brand} {modelName} çalışmaya başladı.");
+        }
+    }
+    class Motorcycle : Vehicle
+    {
+        public string modelName = "motor100";
+        
+
     }
 
 
