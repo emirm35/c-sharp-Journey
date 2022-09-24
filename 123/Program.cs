@@ -18,9 +18,8 @@ namespace _123
         static void Main(string[] args)
         {
            Person myObj = new Person();
-            myObj.Name = "emir";
-            Console.WriteLine(myObj.Name);
-
+            myObj.name = "emir";
+            Console.WriteLine(myObj.name);
 
 
 

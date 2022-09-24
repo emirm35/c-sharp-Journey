@@ -8,10 +8,7 @@ namespace _123
 {
     public class Person
     {
-        private string name;
-        public string Name { get { return name; } set { name = value; } }
-
-       
+        public string name { get; set; }
 
 
 
