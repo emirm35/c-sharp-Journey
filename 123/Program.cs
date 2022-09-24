@@ -17,10 +17,13 @@ namespace _123
 
         static void Main(string[] args)
         {
-           Person myObj = new Person();
-            myObj.name = "emir";
-            Console.WriteLine(myObj.name);
+           
+            Car myCar = new Car();
 
+            // Call the honk() method (From the Vehicle class) on the myCar object
+            myCar.honk();
+
+            Console.WriteLine(myCar.brand + " " + myCar.modelName);
 
 
 
