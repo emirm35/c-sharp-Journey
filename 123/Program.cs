@@ -17,11 +17,9 @@ namespace _123
 
         static void Main(string[] args)
         {
-            Car Ford = new Car("mustang","Red",1969,20000);
-            Car BMW = new Car("m760li", "black", 2023, 1600000);
-            
-
-
+           Person myObj = new Person();
+            myObj.Name = "emir";
+            Console.WriteLine(myObj.Name);
 
 
 
