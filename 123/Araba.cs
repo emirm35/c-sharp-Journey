@@ -19,7 +19,7 @@ namespace _123
 
 
         public void bilgi(string model, string color,int year,int price)
-       {
+        {
            Console.WriteLine($"Car model is {this.model} car year is {this.year} and the car color is {this.color} we sell this car for {this.price}TL");
         }
 
