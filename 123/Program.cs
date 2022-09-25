@@ -3,21 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace _123
 { 
-
-
-  
-    enum Levels
-    {
-        zor
-    }
-        
-
-
-
-
 
     internal class Program
     {
@@ -26,51 +15,21 @@ namespace _123
 
 
 
-
-
-
-
-        enum Level
-        {
-            Low = 5,
-            Medimum = 10,
-            High = 15
-        }
-
-
-
-
-
-
-
-
-
-
-
-
         static void Main(string[] args)
         {
 
-            try // kodu çalıştırmayı dene
-            { 
-                int[] sayılar = { 1, 2, 3 };
-                Console.WriteLine(sayılar[4]);
-            }
-            catch (Exception e) // hatayı yakala
-            {
-                Console.WriteLine(e);
-            }
-            finally // try catch işlemi bittiğinde her halükarda çalışacak
-            {
-                Console.WriteLine("İşleminiz sonuçlandı");
-            }
+           
 
 
 
 
 
 
+            string writeText = "Hello world"; //Create a text string 
+            File.WriteAllText("filename.txt", writeText); // Create a file and write the contents of writetext to it
 
+            string readText = File.ReadAllText("filename.txt");
+            Console.WriteLine(readText);
 
 
 
