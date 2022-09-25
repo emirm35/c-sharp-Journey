@@ -5,69 +5,52 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace _123
-{
+{ 
 
-    interface IFirstInterface
+
+  
+    enum Levels
     {
-        void myMethod();
+        zor
     }
-    interface ISecondInterface
-    {
-        void myOtherMethod();
-    }
-
-
-     class DemoClass : IFirstInterface,ISecondInterface
-    {
-
-        public void myMethod()
-        {
-        Console.WriteLine("Some text");
-
-        }
-
-        public void myOtherMethod()
-        {
-        Console.WriteLine("Some other text");
-        }
-
-
-
-
-
-    }
-
-
-    enum level
-    {
-        Low,
-        Medium,
-        High
-    }
-
-
-
-
+        
 
 
 
 
 
     internal class Program
-    { 
+    {
+
+        enum Months
+        {
+            January,    // 0
+            February,   // 1
+            March,      // 2
+            April,      // 3
+            May,        // 4
+            June,       // 5
+            July        // 6
+
+        }
+
+
+
+
+
+
+
+
+
+
+
 
 
         static void Main(string[] args)
         {
-           DemoClass myObj = new DemoClass();
-            myObj.myMethod();
-            myObj.myOtherMethod();
 
-            level myVar = level.Medium;
-            Console.WriteLine(myVar);
-           
-
-
+            int myNum = (int)Months.April;
+            Console.WriteLine(myNum);  // 3 
 
 
             Console.ReadKey();
