@@ -6,29 +6,20 @@ using System.Threading.Tasks;
 
 namespace _123
 {
-    abstract class Animal
+    interface IAnimal
     {
-        // Abstract method (does not have a body)
-        public abstract void animalSound();
-        // Regular method
-        public void sleep()
+        void animalSound();
+    }
+    class Pig : IAnimal
+    {
+        public void animalSound()
         {
-            Console.WriteLine("Zzz");
+            // The body of animalSound() is provided here
+            Console.WriteLine("The Pig sayS:wee wee");
         }
+
     }
 
-    // Derived Class (inherit from Animal)
-       class Pig : Animal
-    {
-        public override void animalSound()
-        {
-            Console.WriteLine("The pig says:wee wee");
-        }
-    }
-
-
-
-     
 
 
 
