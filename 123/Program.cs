@@ -50,20 +50,40 @@ namespace _123
 
         static void Main(string[] args)
         {
-            Level myVar = Level.High;
 
-            switch (myVar)
-            {
-                case Level.Low:
-                    Console.WriteLine("Low level");
-                    break;
-                    case Level.Medimum:
-                    Console.WriteLine("Medium level");
-                    break ;
-                    case Level.High:
-                    Console.WriteLine("High level");
-                    break;
+            try // kodu çalıştırmayı dene
+            { 
+                int[] sayılar = { 1, 2, 3 };
+                Console.WriteLine(sayılar[4]);
             }
+            catch (Exception e) // hatayı yakala
+            {
+                Console.WriteLine(e);
+            }
+            finally // try catch işlemi bittiğinde her halükarda çalışacak
+            {
+                Console.WriteLine("İşleminiz sonuçlandı");
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
             Console.ReadKey();
