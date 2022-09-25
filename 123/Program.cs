@@ -20,17 +20,10 @@ namespace _123
 
            
 
+            string writeText = Console.ReadLine(); // Girilen yazıları writeText değişkenine ata
+            File.WriteAllText("filename.txt", writeText); // filename.txt adlı text dosyasına writeText değişkenini bas
 
-
-
-
-
-            string writeText = "Hello world"; //Create a text string 
-            File.WriteAllText("filename.txt", writeText); // Create a file and write the contents of writetext to it
-
-            string readText = File.ReadAllText("filename.txt");
-            Console.WriteLine(readText);
-
+           
 
 
 
