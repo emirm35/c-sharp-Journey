@@ -17,19 +17,17 @@ namespace _123
 
         static void Main(string[] args)
         {
-           
-            Car myCar = new Car();
-
-            // Call the honk() method (From the Vehicle class) on the myCar object
-            myCar.honk();
-
-            Console.WriteLine(myCar.brand + " " + myCar.modelName);
-            myCar.calis();
+            Pig myPig = new Pig();
+            myPig.animalSound();
+            myPig.sleep();
 
 
-            Motorcycle myMotorcycle = new Motorcycle();
 
-            Console.WriteLine(myMotorcycle.brand + " " + myMotorcycle.modelName);
+
+
+
+
+
 
 
 
@@ -40,7 +38,6 @@ namespace _123
 
 
             Console.ReadKey();
-
         }
     }
 }
