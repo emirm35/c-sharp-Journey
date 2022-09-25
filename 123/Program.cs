@@ -7,29 +7,42 @@ using System.Threading.Tasks;
 namespace _123
 {
 
-
-
     interface IFirstInterface
     {
-        void myMethod(); // interface method
+        void myMethod();
     }
-
     interface ISecondInterface
     {
-        void myOtherMethod(); // interface method
+        void myOtherMethod();
     }
 
-    // Implement multiple interfaces
-    class DemoClass : IFirstInterface, ISecondInterface
+
+     class DemoClass : IFirstInterface,ISecondInterface
     {
+
         public void myMethod()
         {
-            Console.WriteLine("Some text..");
+        Console.WriteLine("Some text");
+
         }
+
         public void myOtherMethod()
         {
-            Console.WriteLine("Some other text...");
+        Console.WriteLine("Some other text");
         }
+
+
+
+
+
+    }
+
+
+    enum level
+    {
+        Low,
+        Medium,
+        High
     }
 
 
@@ -46,13 +59,13 @@ namespace _123
 
         static void Main(string[] args)
         {
-           
-
-
-            DemoClass myObj = new DemoClass();
-
+           DemoClass myObj = new DemoClass();
             myObj.myMethod();
             myObj.myOtherMethod();
+
+            level myVar = level.Medium;
+            Console.WriteLine(myVar);
+           
 
 
 
